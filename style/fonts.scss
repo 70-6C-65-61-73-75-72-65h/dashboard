@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno:700');
+
+// bold
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: bold;
+  font-style: normal;
+
+  src: url('~@static/webfonts/SFProDisplay-Bold.eot');
+  src: url('~@static/webfonts/SFProDisplay-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('~@static/webfonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('~@static/webfonts/SFProDisplay-Bold.woff') format('woff'),
+    url('~@static/webfonts/SFProDisplay-Bold.ttf') format('truetype');
+}
+// medium
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('~@static/webfonts/SFProDisplay-Medium.eot');
+  src: url('~@static/webfonts/SFProDisplay-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('~@static/webfonts/SFProDisplay-Medium.woff2') format('woff2'),
+    url('~@static/webfonts/SFProDisplay-Medium.woff') format('woff'),
+    url('~@static/webfonts/SFProDisplay-Medium.ttf') format('truetype');
+}
+
+// SF Pro Display Semibold
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+
+  src: url('~@static/webfonts/SFProDisplay-Semibold.eot');
+  src: url('~@static/webfonts/SFProDisplay-Semibold.eot?#iefix')
+      format('embedded-opentype'),
+    url('~@static/webfonts/SFProDisplay-Semibold.woff2') format('woff2'),
+    url('~@static/webfonts/SFProDisplay-Semibold.woff') format('woff'),
+    url('~@static/webfonts/SFProDisplay-Semibold.ttf') format('truetype');
+}
+// normal
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('~@static/webfonts/SFProDisplay-Regular.eot');
+  src: url('~@static/webfonts/SFProDisplay-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('~@static/webfonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('~@static/webfonts/SFProDisplay-Regular.woff') format('woff'),
+    url('~@static/webfonts/SFProDisplay-Regular.ttf') format('truetype');
+}
