@@ -1,0 +1,11 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  &-whole {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+}

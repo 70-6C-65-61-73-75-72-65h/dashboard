@@ -1,0 +1,16 @@
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .headline {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    color: #333269;
+  }
+
+  // customize just link
+  // & .customize {
+  //     width: 90px;
+  // }
+}

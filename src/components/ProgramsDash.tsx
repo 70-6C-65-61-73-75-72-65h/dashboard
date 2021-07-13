@@ -8,8 +8,6 @@ import logo2 from "@static/images/logo2.svg";
 
 interface Props {}
 
-console.log(logo);
-
 const programs: IProgramItem[] = [
   {
     logo: logo,

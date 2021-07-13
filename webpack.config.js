@@ -80,9 +80,9 @@ module.exports = (env, options) => ({
 
             // To get relative path you can use
             // const relativePath = path.relative(context, resourcePath);
-            console.log(url);
-            console.log(resourcePath);
-            console.log(context);
+            // console.log(url);
+            // console.log(resourcePath);
+            // console.log(context);
 
             if (/images.*svg/.test(resourcePath)) {
               return `/static/images/${url}`;
@@ -106,7 +106,7 @@ module.exports = (env, options) => ({
         loader: "file-loader",
         options: {
           name: env === "production" ? "[name]-[hash].[ext]" : "[name].[ext]",
-          publicPath: "/static/fonts",
+          publicPath: "/static/webfonts",
         },
       },
     ],

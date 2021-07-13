@@ -30,17 +30,19 @@ export default function ProgramItem({ item }: Props): ReactElement {
         <div className="secondary">{item.institution}</div>
       </div>
 
-      {item.info.map((i) => (
-        <div className="info">
-          {typeof i.primary === "string" ? (
-            <div className="info-primary">{i.primary} </div>
-          ) : (
-            <i.primary.component percentage={i.primary.percentage} />
-          )}
+      <div className="info-set">
+        {item.info.map((i) => (
+          <div className="info">
+            {typeof i.primary === "string" ? (
+              <div className="info-primary">{i.primary} </div>
+            ) : (
+              <i.primary.component progress={i?.primary?.percentage} />
+            )}
 
-          <div className="info-secondary"> {i.secondary}</div>
-        </div>
-      ))}
+            <div className="info-secondary"> {i.secondary}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
