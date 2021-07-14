@@ -6,4 +6,17 @@
   &.vertical {
     flex-direction: column;
   }
+
+  &.red {
+    color: #ff2c55;
+  }
+
+  &.space-beetwen {
+    &-4 {
+      padding-left: 4px;
+    }
+    &-13 {
+      padding-left: 13px;
+    }
+  }
 }

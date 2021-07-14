@@ -31,3 +31,12 @@
 //     background-position: calc(100% - #{$w}/ 2) calc(#{$h}/ 2);
 //     padding-right: calc(#{$w} * 2) !important;
 // }
+
+@mixin settings {
+  cursor: pointer;
+  background-image: url("~@static/icons/settings.svg");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+}

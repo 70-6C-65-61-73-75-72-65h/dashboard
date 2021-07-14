@@ -4,6 +4,7 @@ import SessionsDash from "@src/components/SessionsDash";
 import Messaging from "@src/components/Messaging";
 import Greeting from "@src/components/Greeting";
 import React, { ReactElement } from "react";
+import { advertisment, sessions } from "@src/constants";
 
 interface Props {}
 
@@ -13,8 +14,8 @@ export default function Main({}: Props): ReactElement {
       <div className="dash-box">
         <Greeting />
         <ProgramsDash />
-        <AdDash />
-        <SessionsDash />
+        <AdDash {...advertisment} />
+        <SessionsDash {...sessions} />
       </div>
       {/* if mediaquery less then 1440px - display none for msgs */}
       <Messaging />

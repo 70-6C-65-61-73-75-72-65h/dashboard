@@ -3,9 +3,35 @@
   flex-direction: column;
   justify-content: start;
 
+  flex: 1 1 83.4%;
+
   &-whole {
     display: flex;
     flex-direction: row;
     justify-content: start;
+  }
+}
+
+@media (max-width: 1400px) {
+  .page {
+    flex: 1 1 86.69%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    display: block;
+    &-whole {
+      display: block;
+    }
+  }
+}
+
+// stop resizing
+@media (max-width: 370px) {
+  .page {
+    &-whole {
+      overflow: hidden;
+    }
   }
 }

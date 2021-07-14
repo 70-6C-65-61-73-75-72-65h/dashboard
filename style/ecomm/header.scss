@@ -1,6 +1,25 @@
 .header {
-  width: 1200px;
-  min-width: 375px;
+  // width: 1200px;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  // min-width: 375px;
+  // flex: 0 0 83.3%;
   height: 79px;
   background: #ffffff;
+}
+
+@media (max-width: 834px) {
+  .header {
+    // max-width: 834px;
+    display: block;
+    width: 100vw;
+
+    height: 48px;
+    position: fixed;
+    top: 0;
+
+    box-sizing: border-box;
+    border: 2px solid #f0eff5;
+  }
 }

@@ -1,0 +1,14 @@
+.date {
+  color: #868597;
+  text-align: center;
+  &-day {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &-month {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 11.93px;
+  }
+}

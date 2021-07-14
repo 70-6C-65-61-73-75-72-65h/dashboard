@@ -11,7 +11,8 @@ export default function Link(props: Props): ReactElement {
       href={props?.href}
       onClick={props?.onClick}
       className={classNames([
-        props.className || "link",
+        "link",
+        props.className,
         props.white && "white",
         props.icon && "with-icon",
         props.vertical && "vertical",
