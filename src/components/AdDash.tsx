@@ -13,7 +13,9 @@ export default function AdDash(props: Props): ReactElement {
     <div className="dash-advertisment">
       <div className="dash-advertisment__main-block">
         <div className="dash-advertisment__illustration">
-          <SuccessFlag vertical>Checked In</SuccessFlag>
+          <SuccessFlag vertical className="ad-flag">
+            Checked In
+          </SuccessFlag>
           <img src={ad} />
         </div>
       </div>

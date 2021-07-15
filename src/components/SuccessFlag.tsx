@@ -5,6 +5,7 @@ import classNames from "@src/utils/classNames";
 interface Props {
   color?: "red" | "white" | "black";
   vertical?: boolean;
+  className?: string;
   children?: React.ReactNode;
 }
 
@@ -13,6 +14,7 @@ export default function SuccessFlag(props: Props): ReactElement {
     <div
       className={classNames([
         "success-flag with-icon",
+        props.className,
         props.color,
         props.vertical && "vertical",
       ])}

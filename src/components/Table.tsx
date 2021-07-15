@@ -10,14 +10,23 @@ export default function Table(props: Props): ReactElement {
     <div className={classNames(["table", props.className])}>
       <div className="table__header">
         {props.columns.map((column, i) => (
-          <div className="table__cell"></div>
+          <div key={i} style={column.style} className="table__cell">
+            {column.field}
+          </div>
         ))}
       </div>
       {props.rows.map((row, i) => (
         <div key={i} className="table__row">
-          {Object.keys(row).map((key) => (
-            <div key={key} className="table__cell">
-              {row[key]}
+          {Object.keys(row).map((key, j) => (
+            <div
+              key={key}
+              style={{
+                ...props.columns[j].style,
+              }}
+              className="table__cell"
+            >
+              {row[key]()}
+              {/* {typeof row[key] === "function" ? row[key]() : row[key]} */}
             </div>
           ))}
         </div>

@@ -28,3 +28,14 @@
     background-color: red;
   }
 }
+
+@media (max-width: 480px) {
+  .ad-flag {
+    background: rgba(88, 85, 214, 0.7);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+  }
+}

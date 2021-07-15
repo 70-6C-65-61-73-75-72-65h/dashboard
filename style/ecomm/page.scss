@@ -28,10 +28,10 @@
 }
 
 // stop resizing
-@media (max-width: 370px) {
-  .page {
-    &-whole {
-      overflow: hidden;
-    }
-  }
-}
+// @media (max-width: 370px) {
+//   .page {
+//     &-whole {
+//       overflow: scroll;
+//     }
+//   }
+// }

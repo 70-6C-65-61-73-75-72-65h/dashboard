@@ -1,8 +1,36 @@
 .table {
+  & &__cell {
+    margin-right: 19px;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+  }
+
   & &__header {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #65708d;
+
+    display: flex;
+    padding-bottom: 16px;
+    .table__cell {
+      justify-content: flex-start;
+    }
   }
   & &__row {
+    padding: 12px 12px 12px 0;
+    display: flex;
+    &:not(:last-child) {
+      border-bottom: solid 1px #eeeeee;
+    }
   }
-  & &__cell {
-  }
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 834px) {
+}
+@media (max-width: 620px) {
 }

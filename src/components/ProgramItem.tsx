@@ -31,8 +31,8 @@ export default function ProgramItem({ item }: Props): ReactElement {
       </div>
 
       <div className="info-set">
-        {item.info.map((i) => (
-          <div className="info">
+        {item.info.map((i, key) => (
+          <div className="info" key={key}>
             {typeof i.primary === "string" ? (
               <div className="info-primary">{i.primary} </div>
             ) : (

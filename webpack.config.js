@@ -33,7 +33,7 @@ module.exports = (env, options) => ({
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
-          "ts-loader",
+          // "ts-loader",
           {
             loader: "babel-loader",
             options: {

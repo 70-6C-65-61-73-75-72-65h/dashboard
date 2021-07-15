@@ -234,7 +234,7 @@
   //
 
   &-sessions {
-    height: 363px;
+    min-height: 363px;
     background: #ffffff;
     border-radius: 20px;
     margin-left: 25px;
@@ -242,6 +242,14 @@
     flex: 1 1 37.66%;
 
     position: relative;
+
+    &__content {
+      // padding-top: 74px;
+      padding: 74px 19px 0;
+      // left: 0;
+      // right: 0;
+      // margin: auto;
+    }
 
     &__header,
     &__settings,
@@ -383,6 +391,7 @@
       margin-bottom: 3px;
     }
     &__topic {
+      color: #9592a6;
       font-size: 11px;
       line-height: 13px;
       letter-spacing: 0.06em;
@@ -437,6 +446,7 @@
     }
 
     &-programs {
+      margin-bottom: 19px;
       flex: 1 1 47.09%;
       &__content {
         width: calc(100% - var(--sides-sm-programs) * 2);
@@ -518,13 +528,89 @@
       margin-bottom: 19px;
     }
     &-advertisment {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       box-sizing: content-box;
       flex: 1 1 15.64%;
     }
   }
 }
 
+@media (max-width: 480px) {
+  .dash {
+    &-page {
+      margin-top: 120px;
+      padding-bottom: 160px;
+    }
+    &-advertisment {
+      height: 112px;
+
+      &__main-block {
+        box-sizing: border-box;
+        // margin-top: 20;
+        // margin-left: 14;
+        // padding: 0px;
+        // transition: border-radius 0.3, padding 0.3s;
+        padding: 20px 12px 20px 14px;
+
+        background: #ffffff;
+        border-radius: 20px;
+        height: 112px;
+        // height: 304px;
+      }
+
+      &__card {
+        top: 20px;
+        height: 72px;
+        width: calc(70%);
+        left: 25%;
+        margin: 0;
+
+        box-shadow: none;
+        border-radius: none;
+        background: white;
+      }
+
+      &__content {
+        &.left {
+          left: 0px;
+        }
+        &.right {
+          right: 0px;
+        }
+        &.top {
+          top: 0px;
+        }
+        &.bottom {
+          bottom: 0px;
+        }
+      }
+
+      &__illustration {
+        position: relative;
+        box-sizing: content-box;
+
+        // background: url("~@static/images/ad.svg") no-repeat;
+        // background-size: calc(100% - 38px) calc(100% - 35px);
+        // width: 100%;
+        // height: 100%;
+        //  rgb(88, 85, 214, 0.1);
+
+        img {
+          object-fit: cover;
+          width: 72px;
+          height: 72px;
+          border-radius: 10px;
+          // background: #5855d6;
+          // opacity: 0.7;
+        }
+      }
+    }
+    &-sessions {
+      // margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
 // @media (max-width: 700px) {
 
 // }
